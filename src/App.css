@@ -31,9 +31,10 @@ body {
 }
 
 .page {
-  max-width: 1120px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 32px 16px 40px;
+  padding: 24px 24px 40px;
 }
 
 .hero {
