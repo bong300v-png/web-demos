@@ -4,6 +4,9 @@ import HomePage from './pages/Home'
 import LoginPage from './pages/Login'
 import RegisterPage from './pages/Register'
 import StaticPage from './pages/StaticPage'
+import PetGroomingPage from './pages/PetGrooming'
+import CryptoWalletPage from './pages/CryptoWallet'
+import SaasDemo from './demos/saas/SaasDemo'
 
 function App() {
   return (
@@ -20,6 +23,15 @@ function App() {
           <nav className="top-nav-links">
             <NavLink to="/" className="top-link">
               Trang chủ
+            </NavLink>
+            <NavLink to="/demo/saas-01" className="top-link">
+              SaaS demo
+            </NavLink>
+            <NavLink to="/pet-grooming" className="top-link">
+              Pet grooming demo
+            </NavLink>
+            <NavLink to="/crypto-wallet" className="top-link">
+              Crypto Wallet demo
             </NavLink>
             <NavLink to="/services" className="top-link">
               Dịch vụ
@@ -43,6 +55,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/demo/saas-01" element={<SaasDemo />} />
+          <Route path="/pet-grooming" element={<PetGroomingPage />} />
+          <Route path="/crypto-wallet" element={<CryptoWalletPage />} />
           <Route
             path="/services"
             element={
